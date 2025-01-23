@@ -7,7 +7,7 @@ using System.Reactive.Linq;
 using OpenCV.Net;
 
 [Combinator]
-[Description("")]
+[Description("Calculate Average Background of last 128 Pictures")]
 [WorkflowElementCategory(ElementCategory.Transform)]
 public class Ave
 {
@@ -16,13 +16,13 @@ public class Ave
     {
         return Observable.Create<IplImage>(observer => 
         {
-            var imageQueue = new ConcurrentQueue<IplImage>();  //Queue for buffering pictures
+            var imageQueue = new ConcurrentQueue<IplImage>();
             return source.Subscribe( image =>
             {
                 if(imageQueue.Count >= Cap)
                 {
                     IplImage OP;
-                    imageQueue.TryDequeue(out OP);   
+                    imageQueue.TryDequeue(out OP);
                 }
                 imageQueue.Enqueue(image);
                 if(imageQueue.Count>0) { IplImage Out = CalculateAverageImage(imageQueue); observer.OnNext(Out);}
@@ -40,7 +40,9 @@ public class Ave
             throw new InvalidOperationException("The image queue is empty.");
         }
 
-        
+        // Assume images are the same size and type, e.g., CV_8UC3
+
+        // Initialize an accumulator for sum
         IplImage accumulator = new IplImage(imageQueue.First().Size,IplDepth.F32,imageQueue.First().Channels);
         IplImage result = new IplImage(imageQueue.First().Size,imageQueue.First().Depth,imageQueue.First().Channels);
         foreach (var image in imageQueue)
@@ -48,7 +50,7 @@ public class Ave
             IplImage image1 = image;
             CV.Add(accumulator, image1, accumulator);
         }
-        accumulator=accumulator/imageQueue.Count;   //calculate average picture as baseline
+        accumulator=accumulator/imageQueue.Count;
         CV.ConvertScaleAbs(accumulator,result);
         return result;
     }

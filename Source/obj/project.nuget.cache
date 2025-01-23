@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "dgSpecHash": "byjploszgfQ=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\DELL\\source\\repos\\DFF\\DFF.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\DELL\\.nuget\\packages\\bonsai.core\\2.8.5\\bonsai.core.2.8.5.nupkg.sha512",
+    "C:\\Users\\DELL\\.nuget\\packages\\opencv.net\\3.4.2\\opencv.net.3.4.2.nupkg.sha512",
+    "C:\\Users\\DELL\\.nuget\\packages\\rx-core\\2.2.5\\rx-core.2.2.5.nupkg.sha512",
+    "C:\\Users\\DELL\\.nuget\\packages\\rx-interfaces\\2.2.5\\rx-interfaces.2.2.5.nupkg.sha512",
+    "C:\\Users\\DELL\\.nuget\\packages\\rx-linq\\2.2.5\\rx-linq.2.2.5.nupkg.sha512",
+    "C:\\Users\\DELL\\.nuget\\packages\\rx-platformservices\\2.2.5\\rx-platformservices.2.2.5.nupkg.sha512"
+  ],
+  "logs": []
+}

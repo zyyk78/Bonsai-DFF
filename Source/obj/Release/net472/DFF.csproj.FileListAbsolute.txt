@@ -1,0 +1,10 @@
+C:\Users\DELL\AppData\Local\Bonsai\Gallery\Release\net472\Bonsai-DFF.dll
+C:\Users\DELL\AppData\Local\Bonsai\Gallery\Release\net472\Bonsai-DFF.pdb
+C:\Users\DELL\source\repos\DFF\obj\Release\net472\DFF.csproj.AssemblyReference.cache
+C:\Users\DELL\source\repos\DFF\obj\Release\net472\DFF.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\DELL\source\repos\DFF\obj\Release\net472\DFF.AssemblyInfoInputs.cache
+C:\Users\DELL\source\repos\DFF\obj\Release\net472\DFF.AssemblyInfo.cs
+C:\Users\DELL\source\repos\DFF\obj\Release\net472\DFF.csproj.CoreCompileInputs.cache
+C:\Users\DELL\source\repos\DFF\obj\Release\net472\DFF.csproj.Up2Date
+C:\Users\DELL\source\repos\DFF\obj\Release\net472\Bonsai-DFF.dll
+C:\Users\DELL\source\repos\DFF\obj\Release\net472\Bonsai-DFF.pdb

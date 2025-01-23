@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>DFF</id>
+    <version>0.1.0</version>
+    <title>DFF</title>
+    <authors>DFF</authors>
+    <description>A package for the Bonsai visual programming language.</description>
+    <copyright>Copyright ©  2025</copyright>
+    <tags>Bonsai Rx DFF</tags>
+    <repository type="git" />
+    <dependencies>
+      <group targetFramework=".NETFramework4.7.2">
+        <dependency id="Bonsai.Core" version="2.8.5" exclude="Build,Analyzers" />
+        <dependency id="OpenCV.Net" version="3.4.2" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="C:\Users\DELL\source\repos\DFF\bin\Debug\net472\DFF.dll" target="lib\net472\DFF.dll" />
+  </files>
+</package>

@@ -7,7 +7,7 @@ using System.Reactive.Linq;
 using OpenCV.Net;
 
 [Combinator]
-[Description("")]
+[Description("Calculate Division of Two Pictures: Item1--Picture, Item2--Background")]
 [WorkflowElementCategory(ElementCategory.Combinator)]
 public class Div
 {

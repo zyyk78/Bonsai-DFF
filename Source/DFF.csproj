@@ -1,0 +1,32 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <Title>Bonsai-DFF</Title>
+    <Description>A package for calculate DFF.</Description>
+    <Authors>zyyk78</Authors>
+    <Copyright>Copyright ©  2025</Copyright>
+    <GeneratePackageOnBuild Condition="'$(Configuration)'=='Release'">true</GeneratePackageOnBuild>
+    <PackageProjectUrl>https://github.com/zyyk78/Bonsai-DFF/tree/main</PackageProjectUrl>
+    <PackageIcon></PackageIcon>
+    <PackageOutputPath></PackageOutputPath>
+    <PackageTags>Bonsai Rx DFF</PackageTags>
+    <TargetFramework>net472</TargetFramework>
+    <Features>strict</Features>
+    <Version>0.0.1</Version>
+    <BaseOutputPath>C:\Users\DELL\AppData\Local\Bonsai\Gallery</BaseOutputPath>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <ProduceReferenceAssembly>False</ProduceReferenceAssembly>
+    <GenerateDocumentationFile>False</GenerateDocumentationFile>
+    <PackageId>Bonsai.DFF</PackageId>
+    <AssemblyName>Bonsai-DFF</AssemblyName>
+    <RepositoryUrl>https://github.com/zyyk78/Bonsai-DFF.git</RepositoryUrl>
+    <PackAsTool>False</PackAsTool>
+    <IncludeSymbols>False</IncludeSymbols>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Bonsai.Core" Version="2.8.5" />
+    <PackageReference Include="OpenCV.Net" Version="3.4.2" />
+  </ItemGroup>
+
+</Project>
